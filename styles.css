@@ -1,3 +1,35 @@
-h1	{
-	color: red;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 100px;
+	font-family: "Roboto", sans-serif;
+}
+
+/*------------------
+
+LAYOUT STYLES
+
+-------------------*/
+
+#nav-name {
+	padding-left: 20px;
+	font-weight: 300;
+}
+
+#main-nav {
+	border-bottom: 1px solid darkgrey;
+}
+
+#main-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.project {
+	border: 1px solid red;
 }
