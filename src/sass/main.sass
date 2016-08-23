@@ -12,6 +12,11 @@ body
 	margin: 0
 	padding: 0
 
+.flex
+	display: flex
+	flex-flow: row wrap
+
+// LANDING
 .landing
 	position: relative
 
@@ -21,19 +26,36 @@ body
 		width: 100%
 .intro
 	width: 100%
-	color: #fff
+	color: $textColor
 	position: absolute
 	top: 50%
 	transform: translateY(-50%)
 	h1
 		width: 60%
 		margin: 0 auto
-		padding: 1rem 0
+		padding: 1.5rem 0
 		text-align: center
-		border-top: 1px solid #fff
-		border-bottom: 1px solid #fff
+		border-top: 1px solid $textColor
+		border-bottom: 1px solid $textColor
 
 .name
 	font-style: italic
 
+.intro-nav
+	width: 100%
+	padding: 0 30rem
+	justify-content: space-around
+	position: absolute
+	top: 65%
+	transform: translateY(-50%)
+	text-align: center
+
+.intro-nav-button
+	color: $textColor
+	border: 1px solid $textColor
+	padding: 20px
+	text-decoration: none
+	&:hover
+		background-color: $textColor
+		color: #000
 
