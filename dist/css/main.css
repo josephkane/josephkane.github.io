@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif"; }
+
+.test {
+  border: 1px solid red; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7f8c8d; }
+
+img {
+  width: 100%; }
+
+.landing {
+  text-align: center;
+  height: 400px;
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
+.name {
+  font-style: italic; }
+
+.intro {
+  color: white; }
