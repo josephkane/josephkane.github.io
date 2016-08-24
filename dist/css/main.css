@@ -7,7 +7,10 @@
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 0.6rem;
+  background-color: #000;
+  color: #fff; }
 
 .flex {
   display: flex;
@@ -25,12 +28,12 @@ body {
   width: 100%;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%); }
   .intro h1 {
     width: 60%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     text-align: center;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff; }
