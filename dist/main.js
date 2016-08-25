@@ -19,6 +19,6 @@ function setLandingImage () {
 	];
 	const randomNumber = Math.floor(Math.random() * landingImageArray.length);
 	const randomImageName = landingImageArray[randomNumber];
-	$(".landing-image").html(`<img src="dist/css/img/${randomImageName}.jpg" alt="${randomImageName}">`);
+	// $(".landing-image").html(`<img src="dist/css/img/${randomImageName}.jpg" alt="${randomImageName}">`)
 };
 
