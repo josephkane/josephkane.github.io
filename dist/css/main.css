@@ -23,7 +23,8 @@ a:visited {
   color: #fff; }
 
 .wrapper {
-  position: relative; }
+  position: relative;
+  background-image: url("dist/css/img/river-rs.jpg"); }
 
 .landing {
   position: absolute;
