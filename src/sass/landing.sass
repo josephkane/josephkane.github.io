@@ -1,4 +1,9 @@
 @import "variables"
+@import "mixins"
+
+.landing
+	@include centerer
+	width: 100%
 
 .intro
 	h1
@@ -15,6 +20,7 @@
 	text-align: center
 
 .landing-nav-button
+	color: $textColor
 	width: 30%
 	margin: 10px auto
 	padding: 10px 0
@@ -23,3 +29,4 @@
 	&:hover, &:active
 		background-color: #fff
 		color: #000
+
