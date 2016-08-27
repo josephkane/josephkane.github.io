@@ -22,3 +22,20 @@ function setLandingImage () {
 	$(".landing").css("background", `url(dist/css/img/${randomImageName}.jpg) no-repeat center`)
 };
 
+// toggle section divs
+function navigateLanding (page) {
+	$(".landing").toggleClass("hide")
+	$(".section").each(function (index) {
+		if ($(this).attr("id") == page) {
+			$(this).show()
+		} else {
+			$(this).hide()
+		}
+	})
+}
+
+// go back to landing page
+function backToLanding (page) {
+	$(`.${page}`).hide()
+	$(".landing").toggleClass("hide")
+}
