@@ -6,7 +6,10 @@ $("document").ready(function () {
 
 // random background images
 function setLandingImage () {
-	const landingImageArray = [
+	let imageFolder;
+	let chosenImageArray;
+
+	const fullSizeImageArray = [
 		"construction-rs",
 		"daisy-rs",
 		"dandelion-rs",
@@ -17,9 +20,27 @@ function setLandingImage () {
 		"roots-rs",
 		"sunrise-rs"
 	];
-	const randomNumber = Math.floor(Math.random() * landingImageArray.length);
-	const randomImageName = landingImageArray[randomNumber];
-	$(".landing").css("background", `url(dist/css/img/${randomImageName}.jpg) no-repeat center`)
+
+	const mobileImageArray = [
+		"hydrant",
+		"sunrise",
+		"lights",
+		"tree",
+		"fan",
+		"beach"
+	];
+
+	if (screen.width <= 699) {
+		imageFolder = "mobile"
+		chosenImageArray = mobileImageArray
+	} else {
+		imageFolder = "full_screen"
+		chosenImageArray = fullSizeImageArray
+	}
+
+	const randomNumber = Math.floor(Math.random() * chosenImageArray.length);
+	const randomImageName = chosenImageArray[randomNumber];
+	$(".landing").css("background", `url(dist/css/img/${imageFolder}/${randomImageName}.jpg) no-repeat center`)
 };
 
 // toggle section divs
