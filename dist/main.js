@@ -6,10 +6,10 @@ $("document").ready(function () {
 
 // random background images
 function setLandingImage () {
-	let imageFolder;
-	let chosenImageArray;
+	var imageFolder;
+	var chosenImageArray;
 
-	const fullSizeImageArray = [
+	var fullSizeImageArray = [
 		"construction-rs",
 		"daisy-rs",
 		"dandelion-rs",
@@ -21,7 +21,7 @@ function setLandingImage () {
 		"sunrise-rs"
 	];
 
-	const mobileImageArray = [
+	var mobileImageArray = [
 		"hydrant",
 		"sunrise",
 		"lights",
@@ -38,8 +38,8 @@ function setLandingImage () {
 		chosenImageArray = fullSizeImageArray
 	}
 
-	const randomNumber = Math.floor(Math.random() * chosenImageArray.length);
-	const randomImageName = chosenImageArray[randomNumber];
+	var randomNumber = Math.floor(Math.random() * chosenImageArray.length);
+	var randomImageName = chosenImageArray[randomNumber];
 	$(".landing").css("background", `url(dist/css/img/${imageFolder}/${randomImageName}.jpg) no-repeat center`)
 };
 
