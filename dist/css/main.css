@@ -11,6 +11,9 @@ body {
   font-size: 2rem;
   background-color: #000;
   color: #fff; }
+  @media screen and (max-width: 1500px) {
+    body {
+      font-size: 1rem; } }
 
 .flex {
   display: flex;
@@ -39,6 +42,10 @@ a:visited {
   .back-to-landing:active {
     background-color: #fff;
     color: #000; }
+  @media screen and (max-width: 1500px) {
+    .back-to-landing {
+      font-size: 8rem;
+      margin: 20px auto; } }
 
 .landing {
   position: absolute;
@@ -46,6 +53,9 @@ a:visited {
   left: 50%;
   transform: translate(-50%, 50%);
   width: 100%; }
+  @media screen and (max-width: 1500px) {
+    .landing {
+      transform: translate(-50%, 50%); } }
 
 .intro h1 {
   margin-bottom: 50px;
@@ -59,6 +69,11 @@ a:visited {
 
 .landing-nav {
   text-align: center; }
+  @media screen and (max-width: 1500px) {
+    .landing-nav {
+      flex-direction: row;
+      width: 50%;
+      margin: 0 auto; } }
 
 .landing-nav-button {
   color: #fff;
@@ -102,6 +117,9 @@ a:visited {
   line-height: 3rem;
   text-align: center;
   margin-bottom: 100px; }
+  @media screen and (max-width: 1500px) {
+    .interest-list {
+      margin-bottom: 50px; } }
 
 .contact {
   position: absolute;
@@ -110,6 +128,9 @@ a:visited {
   transform: translate(-50%, 50%);
   width: 100%;
   transform: translate(-50%, 20%); }
+  @media screen and (max-width: 1500px) {
+    .contact {
+      transform: translate(-50%, 0); } }
 
 .contact-headline {
   text-align: center;
