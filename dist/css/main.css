@@ -110,6 +110,13 @@ a:visited {
   .tech-img img {
     width: 100%;
     border-radius: 25px; }
+  @media screen and (max-width: 1500px) {
+    .tech-img {
+      width: 10%;
+      margin: 10px 20px; }
+      .tech-img img {
+        width: 100%;
+        border-radius: 25px; } }
 
 .interest-list {
   list-style: none;
