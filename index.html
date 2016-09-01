@@ -15,6 +15,14 @@
 
 	<!-- CONTENT -->
 	<body>
+		<div id="hbb-modal" class="modal hide fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		      ...
+		    </div>
+		  </div>
+		</div>
+
 		<div class="wrapper">
 			<div class="landing">
 				<div class="intro">
@@ -104,37 +112,23 @@
 			</div>
 
 			<div id="portfolio" class="section portfolio flex hide">
-				<h3 class="about-label">Coming Soon</h3>
+				<h3 class="about-label work-headline">Work</h3>
+
+				<div class="portfolio-wrapper">
+					<div class="hbb-card project-wrapper" data-toggle="modal" data-target="#hbb-modal">
+					</div>
+					<div class="meow-card project-wrapper" data-toggle="modal" data-target="#meow-modal">
+					</div>
+					<div class="lexicon-card project-wrapper" data-toggle="modal" data-target="#lexicon-modal">
+					</div>
+					<div class="gauntlet-card project-wrapper" data-toggle="modal" data-target="#gauntlet-modal">
+					</div>
+
+				</div>
 
 				<a class="back-to-landing" href="javascript: backToLanding('portfolio')">
 					<
 				</a>
-
-				<!-- <h2>Work</h2>
-				<div class="project-wrapper test" data-toggle="modal" data-target=".hbb-modal">
-					<h4 class="project-heading">Homebrew Buddy</h4>
-					<div class="project-links">
-						<a href=""></a>
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="project-wrapper test" data-toggle="modal" data-target=".ameowzon-modal">
-					<h4 class="project-heading">A-meow-zon</h4>
-					<div class="project-links">
-						<a href=""></a>
-					</div>
-				</div>
-				<div class="project-wrapper test" data-toggle="modal" data-target=".gauntlet-modal">
-					<h4 class="project-heading">Gautlet</h4>
-					<div class="project-links">
-						<a href=""></a>
-						<a href=""></a>
-					</div>
-				</div>
-
-				<a class="back-to-landing" href="javascript: backToLanding('portfolio')">
-					<
-				</a> -->
 
 			</div>
 
