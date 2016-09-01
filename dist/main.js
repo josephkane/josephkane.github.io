@@ -46,10 +46,10 @@ function setLandingImage () {
 
 // toggle section divs
 function navigateLanding (page) {
-	$(".landing").fadeOut(1000)
+	$(".landing").fadeOut(600)
 	$(".section").each(function () {
 		if ($(this).attr("id") == page) {
-			$(this).fadeIn(3000)
+			$(this).fadeIn(1000)
 		} else {
 			$(this).hide()
 		}
@@ -58,6 +58,7 @@ function navigateLanding (page) {
 
 // go back to landing page
 function backToLanding (page) {
-	$(`.${page}`).fadeOut(1000)
-	$(".landing").fadeIn(2000)
+	$(`.${page}`).fadeOut(600, function () {
+		$(".landing").fadeIn(1000)
+	})
 }
