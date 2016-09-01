@@ -9,8 +9,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  background-color: #000;
-  color: #fff; }
+  background-color: #fff;
+  color: #000; }
 
 .flex {
   display: flex;
@@ -24,7 +24,7 @@ a:visited {
 
 .back-to-landing {
   display: block;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-align: center;
   width: 80%;
@@ -53,7 +53,8 @@ a:visited {
   padding: 50px 0;
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
 
 .name {
   font-style: italic; }
@@ -79,10 +80,13 @@ a:visited {
 
 .about-label {
   text-align: center;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
   margin-top: 8rem;
-  padding: 30px 0; }
+  padding: 30px 0;
+  font-size: 2rem;
+  width: 40%;
+  margin: 7rem auto 4rem; }
 
 .about-me {
   font-size: 1.5rem;
@@ -111,6 +115,7 @@ a:visited {
 
 .interest-list {
   list-style: none;
+  padding: 0;
   font-size: 1.5rem;
   line-height: 3rem;
   text-align: center;
@@ -132,10 +137,11 @@ a:visited {
 
 .contact-headline {
   text-align: center;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
   margin-top: 8rem;
-  padding: 30px 0; }
+  padding: 30px 0;
+  font-size: 2rem; }
 
 .contact-link {
   color: #fff;

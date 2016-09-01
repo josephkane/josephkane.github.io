@@ -1,7 +1,7 @@
 "use strict"
 
 $("document").ready(function () {
-	setLandingImage()
+	setLandingImage();
 });
 
 // random background images
@@ -41,14 +41,15 @@ function setLandingImage () {
 	var randomNumber = Math.floor(Math.random() * chosenImageArray.length);
 	var randomImageName = chosenImageArray[randomNumber];
 	$(".landing").css("background", `url(dist/css/img/${imageFolder}/${randomImageName}.jpg) no-repeat center`)
+
 };
 
 // toggle section divs
 function navigateLanding (page) {
-	$(".landing").hide()
+	$(".landing").fadeOut(1000)
 	$(".section").each(function () {
 		if ($(this).attr("id") == page) {
-			$(this).show()
+			$(this).fadeIn(3000)
 		} else {
 			$(this).hide()
 		}
@@ -57,6 +58,6 @@ function navigateLanding (page) {
 
 // go back to landing page
 function backToLanding (page) {
-	$(`.${page}`).hide()
-	$(".landing").show()
+	$(`.${page}`).fadeOut(1000)
+	$(".landing").fadeIn(3000)
 }
