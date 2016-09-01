@@ -11,6 +11,9 @@ body {
   font-size: 1rem;
   background-color: #fff;
   color: #000; }
+  @media screen and (max-width: 699px) {
+    body {
+      font-size: 0.8rem; } }
 
 .flex {
   display: flex;
@@ -27,16 +30,17 @@ a:visited {
   color: #000;
   text-decoration: none;
   text-align: center;
-  width: 10%;
+  width: 20%;
   font-size: 15rem;
-  margin: 100px auto;
-  padding-bottom: 2rem; }
+  margin: -30px auto 100px; }
   .back-to-landing:visited, .back-to-landing:hover {
     color: #000; }
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 699px) {
     .back-to-landing {
       font-size: 8rem;
-      margin: 20px auto; } }
+      margin: 0 auto;
+      width: 80%;
+      padding-bottom: 2rem; } }
 
 .landing {
   display: flex;
@@ -52,16 +56,25 @@ a:visited {
   border-bottom: 5px solid #fff;
   text-align: center;
   color: #fff; }
+  @media screen and (max-width: 699px) {
+    .intro h1 {
+      width: 100%;
+      margin: 0 auto 2rem;
+      padding: 1.5rem 0; } }
 
 .name {
   font-style: italic; }
 
 .landing-nav {
-  text-align: center; }
-  @media screen and (max-width: 1500px) {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto; }
+  @media screen and (max-width: 699px) {
     .landing-nav {
-      flex-direction: row;
-      width: 50%;
+      flex-direction: column;
+      width: 100%;
       margin: 0 auto; } }
 
 .landing-nav-button {
@@ -79,6 +92,11 @@ a:visited {
   .landing-nav-button:hover, .landing-nav-button:active {
     background-color: #fff;
     color: #000; }
+  @media screen and (max-width: 699px) {
+    .landing-nav-button {
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      width: 50%; } }
 
 .about-label {
   text-align: center;
@@ -90,11 +108,17 @@ a:visited {
   width: 40%;
   margin: 7rem auto 4rem; }
 
+.tech-label, .what-else {
+  width: 80%; }
+
 .about-me {
   font-size: 1.5rem;
   width: 80%;
   margin: 0 auto;
   line-height: 3rem; }
+  @media screen and (max-width: 699px) {
+    .about-me {
+      font-size: 1rem; } }
 
 .technologies {
   display: flex;
@@ -107,13 +131,13 @@ a:visited {
   .tech-img img {
     width: 100%;
     border-radius: 25px; }
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 699px) {
     .tech-img {
       width: 10%;
       margin: 10px 20px; }
       .tech-img img {
         width: 100%;
-        border-radius: 25px; } }
+        border-radius: 5px; } }
 
 .interest-list {
   list-style: none;
@@ -127,7 +151,13 @@ a:visited {
       margin-bottom: 50px; } }
 
 .contact {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (max-width: 699px) {
+    .contact {
+      font-size: 1rem; } }
 
 .contact-headline {
   text-align: center;
@@ -138,13 +168,24 @@ a:visited {
   font-size: 2rem;
   width: 80%;
   margin: 8rem auto 4rem; }
+  @media screen and (max-width: 699px) {
+    .contact-headline {
+      width: 100%;
+      margin: 8.5rem auto 3rem;
+      padding: 1.5rem 0;
+      font-size: 1rem; } }
 
 .contact-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-around;
   width: 50%;
   margin: 0 auto; }
+  @media screen and (max-width: 699px) {
+    .contact-list {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto; } }
 
 .contact-link {
   color: #000;
@@ -158,3 +199,8 @@ a:visited {
   .contact-link:hover, .contact-link:active {
     background-color: #000;
     color: #fff; }
+  @media screen and (max-width: 699px) {
+    .contact-link {
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      width: 50%; } }

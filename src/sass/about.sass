@@ -6,11 +6,16 @@
 	width: 40%
 	margin: 7rem auto 4rem
 
+.tech-label, .what-else
+	width: 80%
+
 .about-me
 	font-size: 1.5rem
 	width: 80%
 	margin: 0 auto
 	line-height: 3rem
+	@media screen and (max-width: 699px)
+		font-size: 1rem
 
 .technologies
 	display: flex
@@ -23,12 +28,12 @@
 	img
 		width: 100%
 		border-radius: 25px
-	@media screen and (max-width: $breakBig)
+	@media screen and (max-width: 699px)
 		width: 10%
 		margin: 10px 20px
 		img
 			width: 100%
-			border-radius: 25px
+			border-radius: 5px
 
 .interest-list
 	list-style: none
