@@ -45,7 +45,7 @@ function setLandingImage () {
 
 // toggle section divs
 function navigateLanding (page) {
-	$(".landing").toggleClass("hide")
+	$(".landing").hide()
 	$(".section").each(function () {
 		if ($(this).attr("id") == page) {
 			$(this).show()
@@ -58,5 +58,5 @@ function navigateLanding (page) {
 // go back to landing page
 function backToLanding (page) {
 	$(`.${page}`).hide()
-	$(".landing").toggleClass("hide")
+	$(".landing").show()
 }
