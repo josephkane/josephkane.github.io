@@ -59,5 +59,5 @@ function navigateLanding (page) {
 // go back to landing page
 function backToLanding (page) {
 	$(`.${page}`).fadeOut(1000)
-	$(".landing").fadeIn(3000)
+	$(".landing").fadeIn(2000)
 }

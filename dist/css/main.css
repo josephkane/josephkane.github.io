@@ -27,14 +27,11 @@ a:visited {
   color: #000;
   text-decoration: none;
   text-align: center;
-  width: 80%;
+  width: 10%;
   font-size: 15rem;
   margin: 100px auto;
   padding-bottom: 2rem; }
   .back-to-landing:visited, .back-to-landing:hover {
-    color: #000; }
-  .back-to-landing:active {
-    background-color: #000;
     color: #000; }
   @media screen and (max-width: 1500px) {
     .back-to-landing {
@@ -130,15 +127,7 @@ a:visited {
       margin-bottom: 50px; } }
 
 .contact {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 100%;
-  transform: translate(-50%, 20%); }
-  @media screen and (max-width: 1500px) {
-    .contact {
-      transform: translate(-50%, 0); } }
+  width: 100%; }
 
 .contact-headline {
   text-align: center;
@@ -146,7 +135,16 @@ a:visited {
   border-bottom: 5px solid #000;
   margin-top: 8rem;
   padding: 30px 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  width: 80%;
+  margin: 8rem auto 4rem; }
+
+.contact-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto; }
 
 .contact-link {
   color: #000;
