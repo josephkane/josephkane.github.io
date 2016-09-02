@@ -121,9 +121,6 @@ a:visited {
   width: 80%;
   margin: 0 auto;
   line-height: 3rem; }
-  @media screen and (max-width: 699px) {
-    .about-me {
-      font-size: 1.2rem; } }
 
 .technologies {
   display: flex;
