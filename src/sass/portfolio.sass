@@ -1,3 +1,5 @@
+@import "mixins"
+
 .portfolio-wrapper
 	display: flex
 	flex-flow: row wrap
@@ -11,7 +13,7 @@
 	font-weight: bold
 
 .project-wrapper
-	height: 20rem
+	height: 30rem
 	width: 50%
 	background-repeat: no-repeat
 	background-size: cover
@@ -33,4 +35,54 @@
 .lexicon-card
 	background-image: url("portfolio/lexicon.png")
 
+// MODAL STYLES
 
+.project-modal-header
+	font-family: "Raleway", "sans-serif"
+	font-weight: bold
+	font-style: italic
+
+.modal-paragraph
+	width: 80%
+	margin: 2rem auto
+
+.modal-img
+	width: 90%
+	margin: 0 auto
+	img
+		width: 100%
+
+.project-modal-links
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	width: 80%
+	margin: 0 auto
+	@media screen and (max-width: 699px)
+		flex-direction: column
+
+.project-button
+	@include listButton
+	background-color: #fff
+	padding: 20px 0
+	text-decoration: none
+	text-align: center
+	border: 3px solid #000
+	@media screen and (max-width: 699px)
+		width: 100%
+		margin: 10px auto
+
+@media screen and (max-width: 699px)
+	.portfolio-wrapper
+		flex-direction: column
+		width: 100%
+
+	.project-wrapper
+		width: 100%
+		height: 20rem
+		&:active
+			-webkit-filter: grayscale(0%) brightness(100%)
+			filter: grayscale(0%) brightness(100%)
+
+	.meow-card
+		order: -1
