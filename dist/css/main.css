@@ -267,6 +267,10 @@ a:visited {
     .project-modal-links {
       flex-direction: column; } }
 
+.img-disclaimer {
+  width: 80%;
+  margin: 0 auto; }
+
 .project-button {
   color: #000;
   width: 30%;
