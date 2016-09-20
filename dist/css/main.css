@@ -271,6 +271,10 @@ a:visited {
   width: 80%;
   margin: 0 auto; }
 
+.es6-disclaim {
+  width: 80%;
+  margin: 1rem auto; }
+
 .project-button {
   color: #000;
   width: 30%;
