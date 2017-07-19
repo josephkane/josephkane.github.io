@@ -19,5 +19,6 @@
   "devDependencies": {
     "gulp-sass": "^2.3.2",
     "sass-lint": "^1.9.0"
-  }
+  },
+  "dependencies": {}
 }
