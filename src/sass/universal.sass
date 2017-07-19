@@ -1,0 +1,45 @@
+*
+	box-sizing: border-box
+	font-family: "Raleway", "sans-serif"
+
+.test
+	border: 1px solid red
+
+body
+	margin: 0
+	padding: 0
+	font-size: 1.5rem
+	background-color: #fff
+	color: #000
+	@media screen and (max-width: 699px)
+		font-size: 1.5rem
+
+.flex
+	display: flex
+	flex-direction: column
+
+.hide-div
+	display: none
+
+a
+	&:visited
+		color: $textColor
+
+.back-to-landing
+	display: block
+	color: #000
+	text-decoration: none
+	text-align: center
+	width: 20%
+	font-size: 15rem
+	margin: -30px auto 100px
+	&:visited, &:hover
+		color: $textColor
+		text-decoration: none
+	@media screen and (max-width: 699px)
+		font-size: 8rem
+		margin: 0 auto
+		width: 80%
+		padding-bottom: 2rem
+
+

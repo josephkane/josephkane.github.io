@@ -1,0 +1,24 @@
+{
+  "name": "josephkane.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephkane/josephkane.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephkane/josephkane.github.io/issues"
+  },
+  "homepage": "https://github.com/josephkane/josephkane.github.io#readme",
+  "devDependencies": {
+    "gulp-sass": "^2.3.2",
+    "sass-lint": "^1.9.0"
+  },
+  "dependencies": {}
+}

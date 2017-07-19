@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Joe Kane | Web Developer</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/main.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+
+
+	<body>
+	<!-- PROJECT MODALS -->
+		<div id="hbb-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="hbb_modal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+			  	<div class="modal-header project-modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">×</span>
+	        		</button>
+	        		<h4 class="modal-title project-modal-header" id="myLargeModalLabel">Homebrew Buddy</h4>
+	      		</div>
+		    	<p class="modal-paragraph">One of my favorite hobbies is brewing my own beer. After a year of doing small, one gallon batches on my stovetop at home, I decided to go all in and make a full 6-gallon all-grain (no malt extract) rig. Calculating the recipes became quite a time-consuming task, so when it came time for my frontend capstone at NSS, I decided I would build an app that would calculate and store all of my homemade recipes.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/profile.png" alt="hbb-profile"></div>
+		    	<p class="modal-paragraph">Homebrew Buddy is built with AngularJs, Bootstrap, and Firebase. Ingredient-specific data was provided via the BreweryDB API. I found myself falling madly in love with AngularJs mainly for its two-way binding and routing capabilities. Also, I wanted to get used to Flexbox in CSS and found it incredibly helpful in setting up a moderately-responsive display section using very little code.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/tap.png" alt="hbb-taproom"></div>
+		    	<p class="modal-paragraph">I actually use this app on a regular basis, so I have a decent list going for v2. It includes a more in-depth form validation system, adding the option to print out a recipe, moving user authentication to OAuth, and expanding the database to include "Brew Sessions," which will allow a user to keep track of their numbers each time they brew a given recipe.</p>
+		    	<div class="project-modal-links">
+		    		<a class="project-button" target="_blank" href="http://josephkane.github.io/homebrew-buddy/">HBB on the Web</a>
+		    		<a class="project-button" target="_blank" href="https://github.com/josephkane/homebrew-buddy">HBB on Github</a>
+		    	</div>
+
+		    </div>
+		  </div>
+		</div>
+
+		<div id="meow-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="meow_modal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		    	<div class="modal-header project-modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">×</span>
+	        		</button>
+	        		<h4 class="modal-title project-modal-header" id="myLargeModalLabel">A-meow-zon</h4>
+	      		</div>
+		    	<p class="modal-paragraph">This was a group project we were assigned during the backend portion of NSS. We were tasked with creating an Amazon-like ordering system for the command line. A user can sign in/register, add different payment types, shop for different products (in our case famous felines), buy them, and also print out a popularity report of all products.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/pop-report.png" alt="meow-user"></div>
+		    	<p class="modal-paragraph">All user, payment, and product data was serialized to a .txt file using Python's pickle package. Once we finished the project, we were immediately tasked with converting it to a SQLite-driven application. Switch storage initially proved more difficult than we thought, but in the end it really helped to cement all the concepts we were being taught.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/meow-menu.png" alt="meow-menu"></div>
+		    	<p class="modal-paragraph">One of the stretch goals my group worked on was implementing Python's curses package into our UI. It definitely made debugging a lot less straightforward (no print() or input() statements), but in the end it looked great and really set our project apart.</p>
+		    	<div class="project-modal-links">
+		    		<a class="project-button" target="_blank" href="https://github.com/josephkane/bangazon-group-project-ameowzon">A-meow-zon on Github</a>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="lexicon-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="lexicon_modal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		    	<div class="modal-header project-modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">×</span>
+	        		</button>
+	        		<h4 class="modal-title project-modal-header" id="myLargeModalLabel">Lexicon Artitst</h4>
+	      		</div>
+		    	<p class="modal-paragraph">We were tasked with creating a language analysis program that read a list of phrases from a JSON file, analyzed each individual phrase based on 4 categories (behavior, sentiment, domain, and word/character tokenization).</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/emojis.png" alt="emojis"></div>
+		    	<p class="modal-paragraph">One of the goas of this project was to learn learn the process and benefit of test-driven development. One of the major requirements was that all core logic must be tested and that all tests must be written prior to any implementation code. My group found a really helpful Python package called coverage that showed which parts of your code weren't tested properly.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/coverage.png" alt="coverage"></div>
+		    	<div class="project-modal-links">
+		    		<a class="project-button" target="_blank" href="https://github.com/josephkane/language-analyzer-lexi-con-artists">Lexicon Artist on Github</a>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="gauntlet-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gauntlet_modal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+		    	<div class="modal-header project-modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          		<span aria-hidden="true">×</span>
+	        		</button>
+	        		<h4 class="modal-title project-modal-header" id="myLargeModalLabel">Gauntlet</h4>
+	      		</div>
+		    	<p class="modal-paragraph">Gauntlet was a project in which we were tasked with re-creating the classic turn-based RPG as a means of mastering Javascript's prototypal inheritance concept. After entering their name, a user can select the species of their fighter. The species dictates (through inheritance) which classes the user has access to, which in turn (again through inheritance) dictates which weapons they have access to. </p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/fight.png" alt="fight"></div>
+		    	<p class="modal-paragraph">The enemy is chosen through a random enemy generator, which constructs an opponent with the same inheritance chains as the user creation logic, with randomized species/class/and weapon selections. We made that same logic available to the user via the "random" button on the landing page.</p>
+		    	<div class="modal-img"><img src="dist/css/portfolio/gauntlet-landing.png" alt="gauntlet-landing"></div>
+		    	<h6 class="img-disclaimer">*All images are used for educational purposes only.</h6>
+		    	<div class="project-modal-links">
+		    		<a class="project-button" target="_blank" href="http://josephkane.github.io/gauntlet-jazz/">Gauntlet on the Web</a>
+		    		<a class="project-button" target="_blank" href="https://github.com/josephkane/gauntlet-jazz">Gauntlet on Github</a>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+	<!-- CONTENT -->
+		<div class="wrapper">
+			<div class="landing">
+				<div class="intro">
+					<h1><span class="name">joe kane</span> | web developer</h1>
+				</div>
+				<div class="landing-nav">
+					<a href="javascript: navigateLanding('about')" class="landing-nav-button">
+						About
+					</a>
+					<a href="javascript: navigateLanding('portfolio')" class="landing-nav-button">
+						Portfolio
+					</a>
+					<a href="javascript: navigateLanding('contact')" class="landing-nav-button">
+						Contact
+					</a>
+				</div>
+			</div>
+
+			<div id="about" class="section about hide-div">
+				<h3 class="about-label">Who I Am</h3>
+					<p class="about-content about-me">I am just young (or maybe old) enough to remember the first time I heard a dial-up modem screaming at me through my family's tan 2.7mHz PC. I remember when pagers started dying and Nokia and Motorola were coming out with their then-groundbreaking mobile phones. I'm part of one of the last generations to experience life both with and without readily-accessible internet. I am grateful and excited that I get to play a small part in building the future that technology offers.</p>
+				<h3 class="about-label tech-label">Technologies</h3>
+				<div class="about-content technologies">
+					<div class="tech-img" title="html5">
+						<img src="dist/css/technologies/html-resized.png" alt="html">
+					</div>
+					<div class="tech-img" title="css3">
+						<img src="dist/css/technologies/css-resized.png" alt="bootstrap">
+					</div>
+					<div class="tech-img" title="bootstrap">
+						<img src="dist/css/technologies/bootstrap-resized.png" alt="bootstrap">
+					</div>
+					<div class="tech-img" title="javascript">
+						<img src="dist/css/technologies/javascript-resized.png" alt="javascript">
+					</div>
+					<div class="tech-img" title="react">
+						<img src="dist/css/technologies/react.png" alt="javascript">
+					</div>
+					<div class="tech-img" title="om-om/next-clojurescript">
+						<img src="dist/css/technologies/cljs.png" alt="python">
+					</div>
+					<div class="tech-img" title="jquery">
+						<img src="dist/css/technologies/jquery-resized.png" alt="angular">
+					</div>
+					<div class="tech-img" title="angular">
+						<img src="dist/css/technologies/angular-resized.png" alt="angular">
+					</div>
+					<div class="tech-img" title="gulp">
+						<img src="dist/css/technologies/gulp-resized.png" alt="angular">
+					</div>
+					<div class="tech-img" title="sass">
+						<img src="dist/css/technologies/sass-resized.png" alt="sass">
+					</div>
+					<div class="tech-img" title="less">
+						<img src="dist/css/technologies/less.png" alt="sass">
+					</div>
+					<div class="tech-img" title="python">
+						<img src="dist/css/technologies/python-resized.png" alt="python">
+					</div>
+					<div class="tech-img" title="clojure">
+						<img src="dist/css/technologies/clojure.png" alt="python">
+					</div>
+					<div class="tech-img" title="django">
+						<img src="dist/css/technologies/django-resized.jpg" alt="django">
+					</div>
+					<div class="tech-img" title="sql">
+						<img src="dist/css/technologies/sql-resized.png" alt="sql">
+					</div>
+					<div class="tech-img" title="firebase">
+						<img src="dist/css/technologies/firebase-resized.png" alt="firebase">
+					</div>
+					<div class="tech-img" title="github">
+						<img src="dist/css/technologies/github-resized.png" alt="github">
+					</div>
+					<div class="tech-img" title="google">
+						<img src="dist/css/technologies/google-resized.jpg" alt="google">
+					</div>
+
+				</div>
+				<h3 class="about-label what-else">What Else I Do (when I can)</h3>
+				<ul class="about-content interest-list">
+					<li>Husband</li>
+					<li>New Father</li>
+					<li>Avid Reader</li>
+					<li>Grillmaster</li>
+					<li>Homebrewer of beer/wine/mead/cider/spirits</li>
+					<li>Musician</li>
+					<li>Amateur Film Photographer</li>
+					<li>Outdoors Addict</li>
+				</ul>
+
+				<a class="back-to-landing" href="javascript: backToLanding('about')">
+					<
+				</a>
+
+			</div>
+
+			<div id="portfolio" class="section portfolio flex hide-div">
+				<h3 class="about-label work-headline">Work</h3>
+
+				<div class="portfolio-wrapper">
+					<div class="hbb-card project-wrapper clickable" data-toggle="modal" data-target="#hbb-modal">
+					</div>
+					<div class="meow-card project-wrapper clickable" data-toggle="modal" data-target="#meow-modal">
+					</div>
+					<div class="lexicon-card project-wrapper clickable" data-toggle="modal" data-target="#lexicon-modal">
+					</div>
+					<div class="gauntlet-card project-wrapper clickable" data-toggle="modal" data-target="#gauntlet-modal">
+					</div>
+
+				</div>
+
+				<a class="back-to-landing" href="javascript: backToLanding('portfolio')">
+					<
+				</a>
+
+			</div>
+
+			<div id="contact" class="section contact hide-div">
+				<div class="contact-wrapper">
+					<h2 class="contact-headline">Contact</h2>
+					<div class="contact-list flex">
+						<a target="_blank" href="https://github.com/josephkane" class="contact-link">Github</a>
+						<a href="mailto:josephckane@gmail.com" class="contact-link">E-mail</a>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/joe-kane-aa188b125"
+							class="contact-link">LinkedIn
+						</a>
+					</div>
+
+					<a class="back-to-landing" href="javascript: backToLanding('contact')">
+						<
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+			integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+			crossorigin="anonymous">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="dist/main.js"></script>
+	</body>
+
+</html>

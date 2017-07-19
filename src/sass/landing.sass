@@ -1,0 +1,52 @@
+@import "variables"
+@import "mixins"
+
+.landing
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100vh
+	width: 100vw
+
+.intro
+	h1
+		margin: 0 50px 0
+		padding: 50px 0
+		border-top: 5px solid #fff
+		border-bottom: 5px solid #fff
+		text-align: center
+		color: #fff
+		@media screen and (max-width: 699px)
+			width: 100%
+			margin: 0 auto 2rem
+			padding: 1.5rem 0
+			font-size: 2.5rem
+
+.name
+	font-style: italic
+
+.landing-nav
+	display: flex
+	flex-direction: row
+	width: 50%
+	text-align: center
+	margin: 0 auto
+	@media screen and (max-width: 699px)
+		flex-direction: column
+		width: 100%
+		margin: 0 auto
+
+.landing-nav-button
+	@include listButton
+	color: #fff
+	border-color: #fff
+	&:hover, &:active
+		background-color: #fff
+		color: #000
+	@media screen and (max-width: 699px)
+		margin: 1.5rem auto
+		padding: 1rem 2rem
+		width: 50%
+		font-size: 1.5rem
+
+
